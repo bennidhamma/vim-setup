@@ -44,3 +44,6 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Raimondi/delimitMate'
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%96v.\+/
