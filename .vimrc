@@ -7,7 +7,7 @@ Bundle 'gmarik/vundle'
 set nu
 syntax on
 filetype plugin indent on
-:set wildignore+=*.o,*.obj,.git,*build/*.js
+:set wildignore+=*.o,*.obj,.git,*build/*.js,node_modules/*
 set encoding=utf-8 
 set autoindent
 set incsearch
@@ -31,6 +31,8 @@ call pathogen#infect()
 set hidden
 map <C-N> :bn<cr>
 map <C-P> :bp<cr>
+noremap <F5> :CommandTFlush<cr>
+
 inoremap jj <ESC>
 map cn <esc>:cn<cr>
 map cp <esc>:cp<cr>
@@ -44,6 +46,7 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Raimondi/delimitMate'
+Bundle 'wincent/Command-T.git'
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%96v.\+/
+set cc=96
+highlight ColorColumn ctermbg=black guibg=black

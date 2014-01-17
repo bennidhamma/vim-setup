@@ -106,5 +106,6 @@ hi Error	cterm=bold ctermfg=7 ctermbg=1
 
 hi Pmenu ctermfg=0 ctermbg=6 guibg=#444444
 hi PmenuSel ctermfg=7 ctermbg=4 guibg=#555555 guifg=#ffffff
+hi ColorColumn ctermbg=darkgrey
 
 "vim: sw=4
