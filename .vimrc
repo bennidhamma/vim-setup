@@ -1,13 +1,13 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 set nu
 syntax on
 filetype plugin indent on
-:set wildignore+=*.o,*.obj,.git,*build/*.js,*node_modules/*,*bower_components/*,*dist*
+set wildignore+=*.o,*.obj,.git,*build/*.js,*node_modules/*,*bower_components/*,*dist*
 set encoding=utf-8
 set autoindent
 set incsearch
@@ -48,24 +48,26 @@ set guifont=Inconsolata\ for\ Powerline\ Medium\ 11
 
 set runtimepath+=~/.vim/bundle/vim-snippets/
 
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Raimondi/delimitMate'
-" Bundle 'wincent/Command-T.git'
-" Bundle 'SirVer/ultisnips'
-Bundle 'bonsaiben/bootstrap-snippets'
-Bundle 'honza/vim-snippets'
-Bundle 'mxw/vim-jsx'
-Bundle 'heavenshell/vim-jsdoc'
-" Bundle 'vim-scripts/html5.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'jnurmine/Zenburn'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
+" Plugin 'wincent/Command-T.git'
+" Plugin 'SirVer/ultisnips'
+Plugin 'bonsaiben/bootstrap-snippets'
+Plugin 'honza/vim-snippets'
+Plugin 'mxw/vim-jsx'
+Plugin 'heavenshell/vim-jsdoc'
+" Plugin 'vim-scripts/html5.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'jnurmine/Zenburn'
+
+call vundle#end()
 
 set textwidth=95
 set cc=96
@@ -78,6 +80,9 @@ set laststatus=2
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#displayed_head_limit = 15
+
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 let delimitMate_expand_cr = 1
 
